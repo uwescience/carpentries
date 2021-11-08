@@ -10,8 +10,6 @@ language: "en"     # lowercase two-letter ISO language code such as "fr" (see ht
 latitude: "47.606209"        # decimal latitude of workshop venue (use https://www.latlong.net/)
 longitude: "-122.332071"       # decimal longitude of the workshop venue (use https://www.latlong.net)
 email: ["nben@uw.edu", "janekoh1@uw.edu"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
-collaborative_notes:  # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
-eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
 
 <div class="jumbotron">
@@ -46,7 +44,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
         <ul>
           {% for page in upcoming %}
             <li>
-              <a href="{{ page.url }}">{{ page.humandate }} ({{ page.address }})</a>
+              <a href=".{{ page.url }}">{{ page.humandate }} ({{ page.address }})</a>
             </li>
           {% endfor %}
         </ul>
@@ -205,7 +203,7 @@ Edit the text to match who can attend the workshop. For instance:
 <ul>
   {% for page in past %}
     <li>
-      <a href="{{ page.url }}">{{ page.humandate }} ({{ page.address }})</a>
+      <a href=".{{ page.url }}">{{ page.humandate }} ({{ page.address }})</a>
     </li>
   {% endfor %}
 </ul>
