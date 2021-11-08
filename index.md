@@ -17,7 +17,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 <div class="jumbotron">
   <div class="row">
     <div class="col-md-5">
-      <img src="{{ relative_root_path }}/assets/img/escience-logo.png" alt="Software Carpentries offered by the eScience Institute" title="Software Carpentries offered by the eScience Institute" style="width: 100%"/>
+      <img src="./assets/img/escience-logo.png" alt="Software Carpentries offered by the eScience Institute" title="Software Carpentries offered by the eScience Institute" style="width: 100%"/>
     </div>
     <div class="col-md-7">
       {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
