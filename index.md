@@ -53,8 +53,8 @@ email: ["nben@uw.edu", "janekoh1@uw.edu"]    # boxed, comma-separated list of co
       {% endif %}
 
       <h2 id="next_event">Get notified</h2>
-      Sign up for the <a href="https://mailman11.u.washington.edu/mailman/listinfo/escience_education">eScience Education Working Group mailing list</a> to get notified when the next workshop registration opens:
-      <form style="margin-top: 1em" action="https://mailman11.u.washington.edu/mailman/subscribe/escience_education" method="POST">
+      Sign up for the <a href="https://mailman11.u.washington.edu/mailman/listinfo/escience_bbl">eScience Bulletin</a> to get notified when the next workshop registration opens:
+      <form style="margin-top: 1em" action="https://mailman11.u.washington.edu/mailman/subscribe/escience_bbl" method="POST">
       E-mail: <input name="email" />&nbsp;<input type="submit" value="Sign Me Up!" />
       <input type=radio name="digest" value="0" CHECKED style="display: none">
       </form>
