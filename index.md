@@ -25,7 +25,7 @@ email: ["nben@uw.edu", "janekoh1@uw.edu"]    # boxed, comma-separated list of co
       {% assign past = '' | split: '' %}
       {% for page in sorted %}
         {% capture posttime %}{{page.startdate | date: '%s'}}{% endcapture %}
-        {% if page.layout == 'workshop' %}
+        {% if page.layout == 'workshop' or page.layout == 'event_redirect' %}
           {% if posttime >= nowunix  %}
             {% assign upcoming = upcoming | push: page %}
           {% else %}  
