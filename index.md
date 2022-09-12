@@ -207,9 +207,8 @@ Edit the text to match who can attend the workshop. For instance:
   {% for page in past %}
     <li>
       <a href=".{{ page.url }}">
-      <b>{{ page.humandate }}</b></a><br>
-      {% if page.topic %}{{ page.topic }}<br>{% endif %}
-      ({{ page.address }})
+      <b>{{ page.humandate }}</b></a>
+      {% if page.topic %}<br>{{ page.topic }}{% endif %}
     </li>
   {% endfor %}
 </ul>
