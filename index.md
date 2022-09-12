@@ -44,7 +44,10 @@ email: ["nben@uw.edu", "janekoh1@uw.edu"]    # boxed, comma-separated list of co
         <ul>
           {% for page in upcoming %}
             <li>
-              <a href=".{{ page.url }}">{{ page.humandate }} ({{ page.address }})</a>
+              <a href=".{{ page.url }}">
+              <b>{{ page.humandate }}</b></a><br>
+              {% if page.topic %}{{ page.topic }}<br>{% endif %}
+              ({{ page.address }})
             </li>
           {% endfor %}
         </ul>
@@ -203,7 +206,10 @@ Edit the text to match who can attend the workshop. For instance:
 <ul>
   {% for page in past %}
     <li>
-      <a href=".{{ page.url }}">{{ page.humandate }} ({{ page.address }})</a>
+      <a href=".{{ page.url }}">
+      <b>{{ page.humandate }}</b></a><br>
+      {% if page.topic %}{{ page.topic }}<br>{% endif %}
+      ({{ page.address }})
     </li>
   {% endfor %}
 </ul>
